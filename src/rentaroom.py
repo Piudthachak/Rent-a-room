@@ -79,10 +79,9 @@ class Guest:
         )
         self._bookings.append(new_booking)
 
-        room.set_status("occupied")
 
         return new_booking
-
+    
     def view_booking_history(self):
         for b in self._bookings:
             print(b)
